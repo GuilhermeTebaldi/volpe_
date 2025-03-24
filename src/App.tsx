@@ -76,7 +76,7 @@ export default function VolpeMOC() {
         <div className="flex gap-9">
           <div className="flex justify-center">
             <a
-              href="https://wa.me/5549991259242"
+              href="https://wa.me/554999102026"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-full bg-gradient-to-r from-yellow-400 to-yellow-200 px-10 py-2 text-lg text-black shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-yellow-500/40"
@@ -195,7 +195,7 @@ export default function VolpeMOC() {
             <h3 className="mb-1 text-[10px] uppercase tracking-widest text-[#A89B93]">
               Contato
             </h3>
-            <p>WhatsApp: (49) 99125-9242</p>
+            <p>WhatsApp: (49) 99102026</p>
           </div>
 
           {/* Redes Sociais */}
@@ -217,7 +217,7 @@ export default function VolpeMOC() {
                 />
               </a>
               <a
-                href="https://wa.me/5549991259242"
+                href="https://wa.me/554999102026"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-[#CBBBA5] p-1 transition hover:bg-[#CBBBA5]/10"
