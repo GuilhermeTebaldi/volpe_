@@ -69,7 +69,7 @@ export default function VolpeMOC() {
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-black via-zinc-800 to-black font-sans text-white">
       {/* Barra superior */}
-      <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between border-b border-zinc-600 bg-black/20 px-6 py-2">
+      <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between border-b border-zinc-800 bg-black/20 px-6 py-2">
         <div className="text-lg font-bold tracking-wide text-yellow-100">
           VOLPE Sites
         </div>
@@ -88,12 +88,12 @@ export default function VolpeMOC() {
       </div>
 
       {/* Hero */}
-      <section className="relative flex h-screen flex-col items-center justify-center overflow-hidden px-6 pt-16 text-center">
+      <section className="relative flex h-screen flex-col items-center justify-center overflow-hidden px-6 pt-1  text-center">
         <motion.img
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 8, ease: "easeInOut" }}
-          src="https://i.pinimg.com/1200x/bb/9b/23/bb9b2365004a4a792a837c2cce88095f.jpg"
+          src="https://i.pinimg.com/1200x/ca/9a/77/ca9a77f282af199639c3604c6df96c80.jpg"
           alt="Background"
           className="absolute inset-0 z-0 h-full w-full object-cover opacity-80"
         />
@@ -158,7 +158,7 @@ export default function VolpeMOC() {
           ))}
         </div>
       </section>
-      <footer className="bg-[#3E342F] px-4 py-2 text-[#CBBBA5]">
+      <footer className="bg-[#292e2c] px-4 py-2 text-[#faf8f4]">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 md:flex-row">
           {/* LOGO + Dados médicos */}
           <div>
@@ -166,7 +166,7 @@ export default function VolpeMOC() {
               <span className="block">VOL</span>
               <span className="block">PE</span>
             </h1>
-            <p className="mt-2 text-xs text-[#CBBBA5]">
+            <p className="mt-2 text-xs text-[#f7f7f5]">
               Responsável técnico:
               <br />
               Cristiane E.E.Tebaldi
