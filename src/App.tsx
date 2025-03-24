@@ -1,12 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 export default function VolpeMOC() {
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [selectedIndex, setSelectedIndex] = useState(null);
-  const [showFullGallery, setShowFullGallery] = useState(false);
-  const scrollRef = useRef(null);
 
+  const [showFullGallery, setShowFullGallery] = useState(false);
   const images = [
     "https://i.pinimg.com/736x/57/98/c0/5798c0eb09d5d855e80f1ba812fd12a8.jpg",
     "https://i.pinimg.com/736x/8b/57/d8/8b57d839ee0aafa412b1db3fcf47c145.jpg",
@@ -349,7 +348,7 @@ export default function VolpeMOC() {
               className="max-h-[90vh] max-w-4xl rounded-xl object-contain shadow-2xl"
             />
 
-            {selectedIndex < allImages.length - 1 && (
+            {selectedIndex !== null && selectedIndex < allImages.length - 1 && (
               <button
                 onClick={() => {
                   const next = selectedIndex + 1;
