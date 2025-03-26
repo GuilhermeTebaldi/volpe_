@@ -124,6 +124,33 @@ export default function VolpeMOC() {
           ></motion.div>
         </div>
       </section>
+   <button
+        onClick={() => {
+          alert(
+            "Após o pagamento, envie o comprovante para este WhatsApp: 📲 (84) 99999-9999",
+          );
+          window.open(
+            "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808495b8594f0195c49d22af064d",
+            "_blank",
+          );
+        }}
+        style={{
+          background: "#22c55e",
+          color: "white",
+          padding: "0.75rem 2rem",
+          border: "none",
+          borderRadius: "8px",
+          cursor: "pointer",
+          fontWeight: "bold",
+          fontSize: "1rem",
+          margin: "2rem auto",
+          display: "block",
+        }}
+      >
+        Reservar meu site
+      </button>
+
+
 
       {/* Galeria horizontal */}
       <section className="overflow-x-auto border-y border-zinc-300 bg-black px-1 py-24">
