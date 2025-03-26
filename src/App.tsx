@@ -124,31 +124,27 @@ export default function VolpeMOC() {
           ></motion.div>
         </div>
       </section>
-   <button
-        onClick={() => {
-          alert(
-            "Após o pagamento, envie o comprovante para este WhatsApp: 📲 (55) 49-99102026",
-          );
-          window.open(
-            "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808495b859210195d29014ff0e8e",
-            "_blank",
-          );
-        }}
-        style={{
-          background: "#22c55e",
-          color: "white",
-          padding: "0.75rem 2rem",
-          border: "none",
-          borderRadius: "8px",
-          cursor: "pointer",
-          fontWeight: "bold",
-          fontSize: "1rem",
-          margin: "2rem auto",
-          display: "block",
-        }}
-      >
-        Reservar meu site
-      </button>
+  <div id="paypal-button-container-P-6N145630HT205693KM7SAS3I"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AQt6MQE8GP_MvfnEijZSeO_BJuYXVZyIfyPwg1fw6k3mgyuTrLEOhNIfbPkNZzIuKmsRWANPxahkO5q7&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-6N145630HT205693KM7SAS3I'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-6N145630HT205693KM7SAS3I'); // Renders the PayPal button
+</script>
 
 
 
