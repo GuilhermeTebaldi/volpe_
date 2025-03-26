@@ -127,10 +127,10 @@ export default function VolpeMOC() {
    <button
         onClick={() => {
           alert(
-            "Após o pagamento, envie o comprovante para este WhatsApp: 📲 (84) 99999-9999",
+            "Após o pagamento, envie o comprovante para este WhatsApp: 📲 (55) 49-99102026",
           );
           window.open(
-            "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808495b8594f0195c49d22af064d",
+            "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808495b859210195d29014ff0e8e",
             "_blank",
           );
         }}
